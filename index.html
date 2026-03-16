@@ -112,7 +112,8 @@ const CO_KEY = 'hhbkSGRgoxyZXGzdb9RCr0E1LsjkSmcHXlH5xuOb';
 const chat = document.getElementById('chat');
 const inp = document.getElementById('inp');
 const btn = document.getElementById('btn');
-const LOGO_SRC = document.querySelector('.logo-img').src;
+let LOGO_SRC = '';
+document.addEventListener('DOMContentLoaded', function() { LOGO_SRC = document.querySelector('.logo-img').src; });
 
 const SYSTEM = `Eres MiProfe, asistente académico especializado en Ciencias de la Salud, creado por Erick Peña Galindo. Apoyas a estudiantes de Medicina, Enfermería, Odontología, Farmacia y otras carreras de salud.
 
